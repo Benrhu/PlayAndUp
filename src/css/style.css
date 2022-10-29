@@ -7,6 +7,28 @@
   perspective: 1000px;
 }
 
+.container {
+  text-align: center;
+  width: 576px;
+}
+
+.container h6 {
+  padding-bottom: 20px;
+}
+
+#fade {
+  opacity: 1;
+  -webkit-transition: opacity  0.3s ease-in-out;
+  -moz-transition: opacity  0.3s ease-in-out;
+  -ms-transition: opacity  0.3s ease-in-out;
+  -o-transition: opacity  0.3s ease-in-out;
+  transition: opacity  0.3s ease-in-out;
+}
+
+#fade.fade {
+  opacity: 0;
+}
+
 .flip-card,
 .flip-card-click {
   display: inline-block;
@@ -67,7 +89,7 @@
   color: white;
 }
 .flip-card-front {
-  background-color: #18453b;
+  background-color: skyblue;
 }
 .flip-card-back {
   background-color: #008183;

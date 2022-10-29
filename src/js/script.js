@@ -8,8 +8,7 @@
 
 var highScore;
 var yourPoints = Number(yourPoints);
-
-var rndm = Math.floor(Math.random() * 25);
+var storePoints;
 
 var card = document.querySelectorAll('.flip-card-click')
 
@@ -18,12 +17,17 @@ var card = document.querySelectorAll('.flip-card-click')
   document.getElementById('yourPoints').innerHTML = yourPoints;
 }); */
 
+console.log(yourPoints)
 function addPoints() {
-  yourPoints = rndm;
-  document.getElementById('yourPoints').innerHTML = yourPoints;
-  console.log(yourPoints);
-  console.log(rndm);
+    var rndm = Math.floor(Math.random() * 25);
+    /* yourPoints += rndm; */
+    rndm += yourPoints;
+    storePoints = yourPoints;
+    document.getElementById('yourPoints').innerHTML = yourPoints;
+    console.log(yourPoints);
 }
+
+/* console.log(storePoints) */
 
 function fade(){
   document.querySelectorAll('.flip-card-click').forEach(function (item) {

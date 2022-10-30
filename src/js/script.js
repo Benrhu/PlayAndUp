@@ -15,7 +15,7 @@ var card = document.querySelectorAll('.flip-card-click')
 console.log(yourPoints)
 function addPoints() {
     var rndm = Math.floor(Math.random() * 25);
-    /* yourPoints += rndm; */
+    yourPoints = rndm;
     rndm += yourPoints;
     storePoints = yourPoints;
     document.getElementById('yourPoints').innerHTML = yourPoints;

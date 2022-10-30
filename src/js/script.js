@@ -12,11 +12,6 @@ var storePoints;
 
 var card = document.querySelectorAll('.flip-card-click')
 
-/* card.addEventListener('click', () => {
-  rndm += yourPoints;
-  document.getElementById('yourPoints').innerHTML = yourPoints;
-}); */
-
 console.log(yourPoints)
 function addPoints() {
     var rndm = Math.floor(Math.random() * 25);
@@ -40,7 +35,6 @@ function reset() {
     item.classList.remove('fade');
   });
 }
-
 
 document.querySelectorAll(".flip-card-click").forEach(function (item) {
   item.addEventListener("click", function () {
